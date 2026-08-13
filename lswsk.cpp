@@ -6,18 +6,12 @@ int main()
     int n = arr.size();
     int k = 6;
     int maxi =0;
+    int sum =0;
     for(int i=0;i<n;i++)
     {
-        int sum =0;
-     for(int j=i;j<n;j++)
-     {
-        sum += arr[j];
-        if(sum == k)
-        {
-            maxi = max(maxi,j-i+1);
-        }
-     }
+        sum += arr[i];
     }
+    if(sum < )
     cout<<maxi<<" ";
     return 0;
 }
